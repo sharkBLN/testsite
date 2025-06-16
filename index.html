@@ -1,1 +1,1601 @@
-[HIER DEN KOMPLETTEN HTML CODE AUS DEM ARTIFACT EINFÜGEN]
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minter-Köse 2025 | SHK-Experten Berlin | Heizung • Sanitär • Klima</title>
+    <meta name="description" content="Minter-Köse 2025: Seit 1938 Ihre SHK-Experten in Berlin. Spezialist für Heizung, Sanitär, Klima & regenerative Energien. Service ist alles! ✓ SHK-Innung Berlin ✓ 85+ Jahre Erfahrung">
+    <link rel="canonical" href="https://www.minter-koese.de/">
+    
+    <!-- Language Support -->
+    <link rel="alternate" hreflang="de" href="https://www.minter-koese.de/">
+    <link rel="alternate" hreflang="en" href="https://www.minter-koese.de/en/">
+    <link rel="alternate" hreflang="tr" href="https://www.minter-koese.de/tr/">
+    <link rel="alternate" hreflang="ru" href="https://www.minter-koese.de/ru/">
+    <link rel="alternate" hreflang="ar" href="https://www.minter-koese.de/ar/">
+    
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Minter-Köse 2025 | SHK-Experten Berlin">
+    <meta property="og:description" content="Service ist alles! Ihre Experten für Heizung, Sanitär, Klima & regenerative Energien in Berlin.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.minter-koese.de/">
+    
+    <style>
+        /* Minter-Köse 2025 - Modern CSS Framework */
+        :root {
+            --primary: #1e40af;
+            --primary-light: #3b82f6;
+            --primary-dark: #1e3a8a;
+            --secondary: #f59e0b;
+            --accent: #10b981;
+            --warning: #ef4444;
+            --text: #1f2937;
+            --text-light: #6b7280;
+            --bg: #ffffff;
+            --bg-alt: #f8fafc;
+            --border: #e5e7eb;
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            --gradient-primary: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+            --gradient-hero: linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #10b981 100%);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background: var(--bg);
+            scroll-behavior: smooth;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        /* Header & Navigation */
+        .header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border);
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: var(--text);
+            font-weight: 500;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        .nav-link:hover {
+            color: var(--primary);
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary);
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* Language Selector */
+        .language-selector {
+            position: relative;
+            display: inline-block;
+        }
+
+        .lang-current {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            background: white;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+
+        .lang-current:hover {
+            border-color: var(--primary);
+        }
+
+        .lang-dropdown {
+            position: absolute;
+            top: 100%;
+            right: 0;
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            box-shadow: var(--shadow-lg);
+            min-width: 150px;
+            z-index: 1001;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
+        }
+
+        .lang-dropdown.active {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .lang-option {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .lang-option:last-child {
+            border-bottom: none;
+        }
+
+        .lang-option:hover {
+            background: var(--bg-alt);
+        }
+
+        /* Jobs Popup */
+        .jobs-popup-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(5px);
+            z-index: 10000;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .jobs-popup-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .jobs-popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.9);
+            background: white;
+            border-radius: 16px;
+            padding: 2rem;
+            max-width: 600px;
+            max-height: 80vh;
+            overflow-y: auto;
+            box-shadow: var(--shadow-lg);
+            transition: all 0.3s ease;
+            z-index: 10001;
+        }
+
+        .jobs-popup-overlay.active .jobs-popup {
+            transform: translate(-50%, -50%) scale(1);
+        }
+
+        .jobs-popup-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid var(--border);
+        }
+
+        .jobs-popup-title {
+            font-size: 1.75rem;
+            font-weight: 800;
+            color: var(--primary);
+            margin: 0;
+        }
+
+        .jobs-close-btn {
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--text-light);
+            transition: color 0.3s ease;
+            padding: 0.5rem;
+            border-radius: 50%;
+        }
+
+        .jobs-close-btn:hover {
+            color: var(--warning);
+            background: var(--bg-alt);
+        }
+
+        .jobs-content h3 {
+            color: var(--accent);
+            margin: 1.5rem 0 1rem 0;
+            font-size: 1.25rem;
+        }
+
+        .jobs-content ul {
+            margin: 1rem 0;
+            padding-left: 1.5rem;
+        }
+
+        .jobs-content li {
+            margin-bottom: 0.5rem;
+            color: var(--text);
+        }
+
+        .jobs-cta {
+            background: var(--gradient-primary);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            text-align: center;
+            margin: 2rem 0;
+            font-weight: 600;
+        }
+
+        .jobs-float-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: var(--gradient-primary);
+            color: white;
+            border: none;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            box-shadow: var(--shadow-lg);
+            cursor: pointer;
+            font-size: 1.5rem;
+            transition: all 0.3s ease;
+            z-index: 1000;
+            animation: pulse 2s infinite;
+        }
+
+        .jobs-float-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.7); }
+            70% { box-shadow: 0 0 0 10px rgba(59, 130, 246, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(59, 130, 246, 0); }
+        }
+
+        /* Loading Animation */
+        .loading {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--gradient-hero);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            transition: opacity 0.5s ease;
+        }
+
+        .loading.hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .spinner {
+            width: 40px;
+            height: 40px;
+            border: 4px solid rgba(255, 255, 255, 0.3);
+            border-top: 4px solid white;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            background: var(--gradient-hero);
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+            opacity: 0.3;
+        }
+
+        .hero-content {
+            color: white;
+            max-width: 600px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 900;
+            margin-bottom: 1rem;
+            line-height: 1.1;
+        }
+
+        .hero-subtitle {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .cta-group {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 2rem;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .btn-primary {
+            background: white;
+            color: var(--primary);
+            box-shadow: var(--shadow);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+
+        .btn-outline:hover {
+            background: white;
+            color: var(--primary);
+        }
+
+        /* Services Section */
+        .services {
+            padding: 5rem 0;
+            background: var(--bg-alt);
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            color: var(--text);
+        }
+
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.25rem;
+            color: var(--text-light);
+            margin-bottom: 3rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .service-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid var(--border);
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .service-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--gradient-primary);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+            color: white;
+        }
+
+        .service-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: var(--text);
+        }
+
+        .service-desc {
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+
+        /* About Section */
+        .about {
+            padding: 5rem 0;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .about-text h2 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+        }
+
+        .highlight {
+            color: var(--primary);
+            background: linear-gradient(120deg, var(--primary) 0%, var(--accent) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .about-text p {
+            color: var(--text-light);
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .stat {
+            text-align: center;
+            padding: 1rem;
+            background: var(--bg-alt);
+            border-radius: 8px;
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--primary);
+        }
+
+        .stat-label {
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 5rem 0;
+            background: var(--bg-alt);
+        }
+
+        .contact-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+
+        .contact-icon {
+            width: 40px;
+            height: 40px;
+            background: var(--gradient-primary);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+
+        .contact-form {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: var(--text);
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 0.75rem;
+            border: 2px solid var(--border);
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-input:focus {
+            outline: none;
+            border-color: var(--primary);
+        }
+
+        .form-textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--text);
+            color: white;
+            padding: 3rem 0 1rem;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 1rem;
+            color: var(--accent);
+        }
+
+        .footer-section p,
+        .footer-section li {
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section a:hover {
+            color: var(--accent);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            padding-top: 1rem;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .nav-menu {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: white;
+                flex-direction: column;
+                padding: 1rem;
+                box-shadow: var(--shadow);
+            }
+
+            .nav-menu.active {
+                display: flex;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .about-content,
+            .contact-content {
+                grid-template-columns: 1fr;
+            }
+
+            .cta-group {
+                flex-direction: column;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in-up {
+            animation: fadeInUp 0.6s ease-out;
+        }
+    </style>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading" id="loading">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="logo">Minter-Köse 2025</div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link" data-i18n="nav.home">Home</a></li>
+                <li><a href="#services" class="nav-link" data-i18n="nav.services">Leistungen</a></li>
+                <li><a href="#about" class="nav-link" data-i18n="nav.about">Über uns</a></li>
+                <li><a href="#contact" class="nav-link" data-i18n="nav.contact">Kontakt</a></li>
+                <li><a href="#" class="nav-link" id="jobs-trigger" data-i18n="nav.jobs">Jobs</a></li>
+            </ul>
+            <div style="display: flex; align-items: center; gap: 1rem;">
+                <div class="language-selector">
+                    <div class="lang-current" id="lang-current">
+                        <span>🇩🇪</span>
+                        <span data-i18n="lang.de">Deutsch</span>
+                        <span>▼</span>
+                    </div>
+                    <div class="lang-dropdown" id="lang-dropdown">
+                        <div class="lang-option" data-lang="de">
+                            <span>🇩🇪</span>
+                            <span data-i18n="lang.de">Deutsch</span>
+                        </div>
+                        <div class="lang-option" data-lang="en">
+                            <span>🇬🇧</span>
+                            <span data-i18n="lang.en">English</span>
+                        </div>
+                        <div class="lang-option" data-lang="tr">
+                            <span>🇹🇷</span>
+                            <span data-i18n="lang.tr">Türkçe</span>
+                        </div>
+                        <div class="lang-option" data-lang="ru">
+                            <span>🇷🇺</span>
+                            <span data-i18n="lang.ru">Русский</span>
+                        </div>
+                        <div class="lang-option" data-lang="ar">
+                            <span>🇸🇦</span>
+                            <span data-i18n="lang.ar">العربية</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="mobile-menu-btn" id="mobile-menu-btn">☰</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content fade-in-up">
+                <h1 data-i18n="hero.title">Service ist alles!</h1>
+                <p class="hero-subtitle" data-i18n="hero.subtitle">
+                    Seit 1938 Ihre SHK-Experten in Berlin für Heizung, Sanitär, Klima & regenerative Energien. 
+                    Mitglied der SHK-Innung Berlin mit über 85 Jahren Erfahrung.
+                </p>
+                <div class="cta-group">
+                    <a href="#contact" class="btn btn-primary" data-i18n="hero.cta1">
+                        📞 Jetzt Termin vereinbaren
+                    </a>
+                    <a href="#services" class="btn btn-outline" data-i18n="hero.cta2">
+                        🔧 Unsere Leistungen
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title">Unsere Leistungen</h2>
+            <p class="section-subtitle">
+                Von der Heizungsmodernisierung bis zur Badmodernisierung – 
+                wir sind Ihr zuverlässiger Partner für alle SHK-Arbeiten.
+            </p>
+            
+            <div class="services-grid">
+                <div class="service-card fade-in-up">
+                    <div class="service-icon">🔥</div>
+                    <h3 class="service-title">Heizungstechnik</h3>
+                    <p class="service-desc">
+                        Moderne Heizungsanlagen, Wartung und Reparaturen. 
+                        Energieeffiziente Lösungen für Ihr Zuhause.
+                    </p>
+                </div>
+                
+                <div class="service-card fade-in-up">
+                    <div class="service-icon">🚿</div>
+                    <h3 class="service-title">Sanitärtechnik</h3>
+                    <p class="service-desc">
+                        Badmodernisierung, Rohrleitungen und alle sanitären Installationen. 
+                        Von der Planung bis zur Ausführung.
+                    </p>
+                </div>
+                
+                <div class="service-card fade-in-up">
+                    <div class="service-icon">❄️</div>
+                    <h3 class="service-title">Klimatechnik</h3>
+                    <p class="service-desc">
+                        Klimaanlagen, Lüftungssysteme und Kälteerzeugung. 
+                        Für ein perfektes Raumklima das ganze Jahr.
+                    </p>
+                </div>
+                
+                <div class="service-card fade-in-up">
+                    <div class="service-icon">🌱</div>
+                    <h3 class="service-title">Regenerative Energien</h3>
+                    <p class="service-desc">
+                        Wärmepumpen, Solarthermie und nachhaltige Energielösungen. 
+                        Umweltfreundlich und kostensparend.
+                    </p>
+                </div>
+                
+                <div class="service-card fade-in-up">
+                    <div class="service-icon">🔧</div>
+                    <h3 class="service-title">Wartung & Service</h3>
+                    <p class="service-desc">
+                        Regelmäßige Wartung verlängert die Lebensdauer Ihrer Anlagen. 
+                        Schnelle Hilfe bei Störungen – 24/7 Notdienst.
+                    </p>
+                </div>
+                
+                <div class="service-card fade-in-up">
+                    <div class="service-icon">💧</div>
+                    <h3 class="service-title">Wasseraufbereitung</h3>
+                    <p class="service-desc">
+                        Gesundes Trinkwasser direkt aus dem Wasserhahn. 
+                        Wasserfilter und Aufbereitungsanlagen.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text fade-in-up">
+                    <h2>Ihr <span class="highlight">Experten-Team</span> in Berlin</h2>
+                    <p>
+                        Als Mitglied der SHK-Innung Berlin arbeiten wir stets nach den neuesten 
+                        Bestimmungen und Qualitätsrichtlinien. Unser erfahrenes Team steht für 
+                        Qualität, Zuverlässigkeit und individuelle Lösungen.
+                    </p>
+                    <p>
+                        Wir greifen auf langjährige Erfahrung und umfangreiches Praxiswissen zurück. 
+                        Was bei uns an erster Stelle steht: Wir gehen auf Ihre individuellen 
+                        Wünsche ein und beraten Sie umfassend.
+                    </p>
+                    
+                    <div class="stats-grid">
+                        <div class="stat">
+                            <div class="stat-number">85+</div>
+                            <div class="stat-label" data-i18n="about.years">Jahre Erfahrung</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">5000+</div>
+                            <div class="stat-label" data-i18n="about.customers">Zufriedene Kunden</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">24/7</div>
+                            <div class="stat-label" data-i18n="about.service">Notdienst</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">1938</div>
+                            <div class="stat-label" data-i18n="about.founded">Gegründet</div>
+                        </div>
+                    </div>
+                    
+                    <a href="#contact" class="btn btn-primary">Jetzt beraten lassen</a>
+                </div>
+                
+                <div class="about-image fade-in-up">
+                    <div style="background: var(--gradient-primary); height: 400px; border-radius: 12px; display: flex; align-items: center; justify-content: center; color: white; font-size: 4rem;">
+                        🏠
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Kontakt aufnehmen</h2>
+            <p class="section-subtitle">
+                Haben Sie Fragen oder benötigen Sie einen Termin? 
+                Wir sind gerne für Sie da!
+            </p>
+            
+            <div class="contact-content">
+                <div class="contact-info fade-in-up">
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            <h4 data-i18n="contact.phone">Telefon</h4>
+                            <p>030 / 622 10 44</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">📠</div>
+                        <div>
+                            <h4 data-i18n="contact.fax">Fax</h4>
+                            <p>030 / 621 50 69</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">✉️</div>
+                        <div>
+                            <h4 data-i18n="contact.email">E-Mail</h4>
+                            <p>info@minter-koese.de</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <h4 data-i18n="contact.address">Adresse</h4>
+                            <p>Jonasstr. 39<br>12053 Berlin-Neukölln</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">🕒</div>
+                        <div>
+                            <h4 data-i18n="contact.hours">Öffnungszeiten</h4>
+                            <p data-i18n="contact.hours_detail">Mo-Fr: 7:00-17:00 Uhr<br>Sa: 8:00-14:00 Uhr</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">👨‍🔧</div>
+                        <div>
+                            <h4 data-i18n="contact.owner">Inhaber</h4>
+                            <p>Mesut Köse</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form fade-in-up" id="contact-form">
+                    <div class="form-group">
+                        <label class="form-label">Name *</label>
+                        <input type="text" class="form-input" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">E-Mail *</label>
+                        <input type="email" class="form-input" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">Telefon</label>
+                        <input type="tel" class="form-input">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">Nachricht *</label>
+                        <textarea class="form-input form-textarea" required 
+                                placeholder="Beschreiben Sie Ihr Anliegen..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">
+                        📤 Nachricht senden
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Minter-Köse 2025</h3>
+                    <p>Ihr SHK-Experte in Berlin</p>
+                    <p>Mitglied der SHK-Innung Berlin</p>
+                    <p>Service ist alles!</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Leistungen</h3>
+                    <ul>
+                        <li><a href="#services">Heizungstechnik</a></li>
+                        <li><a href="#services">Sanitärtechnik</a></li>
+                        <li><a href="#services">Klimatechnik</a></li>
+                        <li><a href="#services">Regenerative Energien</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Kontakt</h3>
+                    <ul>
+                        <li>📞 030 / 622 10 44</li>
+                        <li>📠 030 / 621 50 69</li>
+                        <li>✉️ info@minter-koese.de</li>
+                        <li>📍 Jonasstr. 39, 12053 Berlin-Neukölln</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Rechtliches</h3>
+                    <ul>
+                        <li><a href="/impressum.html">Impressum</a></li>
+                        <li><a href="/datenschutz.html">Datenschutz</a></li>
+                        <li><a href="/agb.html">AGB</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Minter-Köse. Alle Rechte vorbehalten. | Made with ❤️ in Berlin</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Jobs Popup -->
+    <div class="jobs-popup-overlay" id="jobs-popup-overlay">
+        <div class="jobs-popup">
+            <div class="jobs-popup-header">
+                <h2 class="jobs-popup-title" data-i18n="jobs.title">🚀 Wir stellen ein!</h2>
+                <button class="jobs-close-btn" id="jobs-close-btn">✖</button>
+            </div>
+            <div class="jobs-content">
+                <h3 data-i18n="jobs.subtitle">Verstärkung gesucht!</h3>
+                
+                <h3 data-i18n="jobs.seeking">Wir suchen:</h3>
+                <ul>
+                    <li data-i18n="jobs.apprentice"><strong>Auszubildende (m/w/d)</strong> im Bereich Sanitär-, Heizungs- und Klimatechnik</li>
+                    <li data-i18n="jobs.journeyman"><strong>Gesellen (m/w/d)</strong> mit Erfahrung und Leidenschaft fürs Handwerk</li>
+                </ul>
+                
+                <h3 data-i18n="jobs.expect">Was dich erwartet:</h3>
+                <p data-i18n="jobs.description">
+                    Ein familiäres Arbeitsumfeld, abwechslungsreiche Einsätze in ganz Berlin und echte Entwicklungschancen. 
+                    Bei uns lernst du alles von der Pike auf – modern, praxisnah und immer mit einem Spritzer Humor.
+                </p>
+                
+                <p data-i18n="jobs.more_info">
+                    Mehr Infos zur Ausbildung findest du auch bei der 
+                    <a href="https://www.hwk-berlin.de/" target="_blank" style="color: var(--primary);">Handwerkskammer Berlin</a>.
+                </p>
+                
+                <div class="jobs-cta">
+                    <p style="margin: 0; font-size: 1.1rem;" data-i18n="jobs.contact">
+                        <strong>Interesse? Einfach melden:</strong><br>
+                        <a href="mailto:bewerbung@koese-sanitaer.de" style="color: white; text-decoration: underline;">
+                            bewerbung@koese-sanitaer.de
+                        </a>
+                    </p>
+                </div>
+                
+                <div style="text-align: center; margin-top: 1.5rem;">
+                    <p style="font-size: 0.9rem; color: var(--text-light);" data-i18n="jobs.since">
+                        <em>Seit 1938 bilden wir erfolgreich aus! 🏆</em>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Jobs Button -->
+    <button class="jobs-float-btn" id="jobs-float-btn" title="Wir stellen ein!">
+        💼
+    </button>
+
+    <script>
+        // Minter-Köse 2025 - Modern JavaScript Framework with i18n
+        class MinterKoese2025 {
+            constructor() {
+                // Use in-memory storage instead of localStorage for sandbox compatibility
+                this.currentLang = 'de';
+                this.translations = this.getTranslations();
+                this.init();
+            }
+
+            getTranslations() {
+                return {
+                    de: {
+                        'nav.home': 'Home',
+                        'nav.services': 'Leistungen',
+                        'nav.about': 'Über uns',
+                        'nav.contact': 'Kontakt',
+                        'nav.jobs': 'Jobs',
+                        'lang.de': 'Deutsch',
+                        'lang.en': 'English',
+                        'lang.tr': 'Türkçe',
+                        'lang.ru': 'Русский',
+                        'lang.ar': 'العربية',
+                        'hero.title': 'Service ist alles!',
+                        'hero.subtitle': 'Seit 1938 Ihre SHK-Experten in Berlin für Heizung, Sanitär, Klima & regenerative Energien. Mitglied der SHK-Innung Berlin mit über 85 Jahren Erfahrung.',
+                        'hero.cta1': '📞 Jetzt Termin vereinbaren',
+                        'hero.cta2': '🔧 Unsere Leistungen',
+                        'contact.phone': 'Telefon',
+                        'contact.fax': 'Fax',
+                        'contact.email': 'E-Mail',
+                        'contact.address': 'Adresse',
+                        'contact.hours': 'Öffnungszeiten',
+                        'contact.hours_detail': 'Mo-Fr: 7:00-17:00 Uhr<br>Sa: 8:00-14:00 Uhr',
+                        'contact.owner': 'Inhaber',
+                        'about.years': 'Jahre Erfahrung',
+                        'about.customers': 'Zufriedene Kunden',
+                        'about.service': 'Notdienst',
+                        'about.founded': 'Gegründet',
+                        'jobs.title': '🚀 Wir stellen ein!',
+                        'jobs.subtitle': 'Verstärkung gesucht!',
+                        'jobs.seeking': 'Wir suchen:',
+                        'jobs.apprentice': 'Auszubildende (m/w/d) im Bereich Sanitär-, Heizungs- und Klimatechnik',
+                        'jobs.journeyman': 'Gesellen (m/w/d) mit Erfahrung und Leidenschaft fürs Handwerk',
+                        'jobs.expect': 'Was dich erwartet:',
+                        'jobs.description': 'Ein familiäres Arbeitsumfeld, abwechslungsreiche Einsätze in ganz Berlin und echte Entwicklungschancen. Bei uns lernst du alles von der Pike auf – modern, praxisnah und immer mit einem Spritzer Humor.',
+                        'jobs.more_info': 'Mehr Infos zur Ausbildung findest du auch bei der Handwerkskammer Berlin.',
+                        'jobs.contact': 'Interesse? Einfach melden: bewerbung@koese-sanitaer.de',
+                        'jobs.since': 'Seit 1938 bilden wir erfolgreich aus! 🏆'
+                    },
+                    en: {
+                        'nav.home': 'Home',
+                        'nav.services': 'Services',
+                        'nav.about': 'About Us',
+                        'nav.contact': 'Contact',
+                        'nav.jobs': 'Jobs',
+                        'lang.de': 'German',
+                        'lang.en': 'English',
+                        'lang.tr': 'Turkish',
+                        'lang.ru': 'Russian',
+                        'lang.ar': 'Arabic',
+                        'hero.title': 'Service is everything!',
+                        'hero.subtitle': 'Since 1938 your SHK experts in Berlin for heating, plumbing, air conditioning & renewable energy. Member of SHK Guild Berlin with over 85 years of experience.',
+                        'hero.cta1': '📞 Book appointment now',
+                        'hero.cta2': '🔧 Our Services',
+                        'contact.phone': 'Phone',
+                        'contact.fax': 'Fax',
+                        'contact.email': 'E-Mail',
+                        'contact.address': 'Address',
+                        'contact.hours': 'Opening Hours',
+                        'contact.hours_detail': 'Mon-Fri: 7:00-17:00<br>Sat: 8:00-14:00',
+                        'contact.owner': 'Owner',
+                        'about.years': 'Years Experience',
+                        'about.customers': 'Happy Customers',
+                        'about.service': 'Emergency Service',
+                        'about.founded': 'Founded',
+                        'jobs.title': '🚀 We\'re hiring!',
+                        'jobs.subtitle': 'Looking for reinforcement!',
+                        'jobs.seeking': 'We are looking for:',
+                        'jobs.apprentice': 'Apprentices (m/f/d) in plumbing, heating and air conditioning technology',
+                        'jobs.journeyman': 'Journeymen (m/f/d) with experience and passion for craftsmanship',
+                        'jobs.expect': 'What awaits you:',
+                        'jobs.description': 'A family working environment, varied assignments throughout Berlin and real development opportunities. With us you learn everything from scratch – modern, practical and always with a touch of humor.',
+                        'jobs.more_info': 'More information about apprenticeships can also be found at the Berlin Chamber of Crafts.',
+                        'jobs.contact': 'Interested? Just get in touch: bewerbung@koese-sanitaer.de',
+                        'jobs.since': 'Successfully training since 1938! 🏆'
+                    },
+                    tr: {
+                        'nav.home': 'Ana Sayfa',
+                        'nav.services': 'Hizmetler',
+                        'nav.about': 'Hakkımızda',
+                        'nav.contact': 'İletişim',
+                        'nav.jobs': 'İş İlanları',
+                        'lang.de': 'Almanca',
+                        'lang.en': 'İngilizce',
+                        'lang.tr': 'Türkçe',
+                        'lang.ru': 'Rusça',
+                        'lang.ar': 'Arapça',
+                        'hero.title': 'Hizmet her şeydir!',
+                        'hero.subtitle': '1938\'den beri Berlin\'de ısıtma, sıhhi tesisat, klima ve yenilenebilir enerji uzmanlarınız. 85+ yıllık deneyimle SHK Berlin Lonca üyesi.',
+                        'hero.cta1': '📞 Hemen randevu alın',
+                        'hero.cta2': '🔧 Hizmetlerimiz',
+                        'contact.phone': 'Telefon',
+                        'contact.fax': 'Faks',
+                        'contact.email': 'E-Posta',
+                        'contact.address': 'Adres',
+                        'contact.hours': 'Çalışma Saatleri',
+                        'contact.hours_detail': 'Ptesi-Cuma: 7:00-17:00<br>Cumartesi: 8:00-14:00',
+                        'contact.owner': 'Sahibi',
+                        'about.years': 'Yıl Deneyim',
+                        'about.customers': 'Memnun Müşteri',
+                        'about.service': 'Acil Servis',
+                        'about.founded': 'Kuruldu',
+                        'jobs.title': '🚀 İş alıyoruz!',
+                        'jobs.subtitle': 'Takviye arıyoruz!',
+                        'jobs.seeking': 'Arıyoruz:',
+                        'jobs.apprentice': 'Sıhhi tesisat, ısıtma ve klima teknolojisi alanında çıraklar (e/k)',
+                        'jobs.journeyman': 'Deneyimli ve el sanatlarına tutkulu kalfalar (e/k)',
+                        'jobs.expect': 'Sizi bekleyen:',
+                        'jobs.description': 'Aile çalışma ortamı, Berlin genelinde çeşitli görevler ve gerçek gelişim fırsatları. Bizimle her şeyi sıfırdan öğreniyorsunuz – modern, pratik ve her zaman biraz mizahla.',
+                        'jobs.more_info': 'Çıraklık hakkında daha fazla bilgiyi Berlin El Sanatları Odası\'nda da bulabilirsiniz.',
+                        'jobs.contact': 'İlgileniyorsunuz? Sadece iletişime geçin: bewerbung@koese-sanitaer.de',
+                        'jobs.since': '1938\'den beri başarıyla eğitim veriyoruz! 🏆'
+                    },
+                    ru: {
+                        'nav.home': 'Главная',
+                        'nav.services': 'Услуги',
+                        'nav.about': 'О нас',
+                        'nav.contact': 'Контакт',
+                        'nav.jobs': 'Вакансии',
+                        'lang.de': 'Немецкий',
+                        'lang.en': 'Английский',
+                        'lang.tr': 'Турецкий',
+                        'lang.ru': 'Русский',
+                        'lang.ar': 'Арабский',
+                        'hero.title': 'Сервис - это всё!',
+                        'hero.subtitle': 'С 1938 года ваши эксперты SHK в Берлине по отоплению, водопроводу, кондиционированию и возобновляемой энергии. Член гильдии SHK Berlin с опытом более 85 лет.',
+                        'hero.cta1': '📞 Записаться сейчас',
+                        'hero.cta2': '🔧 Наши услуги',
+                        'contact.phone': 'Телефон',
+                        'contact.fax': 'Факс',
+                        'contact.email': 'Эл. почта',
+                        'contact.address': 'Адрес',
+                        'contact.hours': 'Часы работы',
+                        'contact.hours_detail': 'Пн-Пт: 7:00-17:00<br>Сб: 8:00-14:00',
+                        'contact.owner': 'Владелец',
+                        'about.years': 'Лет опыта',
+                        'about.customers': 'Довольных клиентов',
+                        'about.service': 'Экстренная служба',
+                        'about.founded': 'Основана',
+                        'jobs.title': '🚀 Мы набираем!',
+                        'jobs.subtitle': 'Ищем пополнение!',
+                        'jobs.seeking': 'Мы ищем:',
+                        'jobs.apprentice': 'Учеников (м/ж) в области сантехники, отопления и климатического оборудования',
+                        'jobs.journeyman': 'Подмастерьев (м/ж) с опытом и страстью к ремеслу',
+                        'jobs.expect': 'Что вас ждет:',
+                        'jobs.description': 'Семейная рабочая атмосфера, разнообразные задания по всему Берлину и реальные возможности развития. У нас вы изучаете всё с нуля – современно, практично и всегда с долей юмора.',
+                        'jobs.more_info': 'Больше информации об ученичестве можно найти в Берлинской ремесленной палате.',
+                        'jobs.contact': 'Заинтересованы? Просто свяжитесь с нами: bewerbung@koese-sanitaer.de',
+                        'jobs.since': 'Успешно обучаем с 1938 года! 🏆'
+                    },
+                    ar: {
+                        'nav.home': 'الرئيسية',
+                        'nav.services': 'الخدمات',
+                        'nav.about': 'من نحن',
+                        'nav.contact': 'اتصل بنا',
+                        'nav.jobs': 'الوظائف',
+                        'lang.de': 'الألمانية',
+                        'lang.en': 'الإنجليزية',
+                        'lang.tr': 'التركية',
+                        'lang.ru': 'الروسية',
+                        'lang.ar': 'العربية',
+                        'hero.title': 'الخدمة هي كل شيء!',
+                        'hero.subtitle': 'منذ عام 1938 خبراء SHK في برلين للتدفئة والسباكة وتكييف الهواء والطاقة المتجددة. عضو في نقابة SHK برلين مع خبرة تزيد عن 85 عامًا.',
+                        'hero.cta1': '📞 احجز موعد الآن',
+                        'hero.cta2': '🔧 خدماتنا',
+                        'contact.phone': 'الهاتف',
+                        'contact.fax': 'الفاكس',
+                        'contact.email': 'البريد الإلكتروني',
+                        'contact.address': 'العنوان',
+                        'contact.hours': 'ساعات العمل',
+                        'contact.hours_detail': 'الإثنين-الجمعة: 7:00-17:00<br>السبت: 8:00-14:00',
+                        'contact.owner': 'المالك',
+                        'about.years': 'سنوات الخبرة',
+                        'about.customers': 'عملاء راضون',
+                        'about.service': 'خدمة الطوارئ',
+                        'about.founded': 'تأسست',
+                        'jobs.title': '🚀 نحن نوظف!',
+                        'jobs.subtitle': 'نبحث عن تعزيزات!',
+                        'jobs.seeking': 'نحن نبحث عن:',
+                        'jobs.apprentice': 'متدربين (ذ/أ) في مجال السباكة والتدفئة وتكييف الهواء',
+                        'jobs.journeyman': 'حرفيين (ذ/أ) ذوي خبرة وشغف بالحرفة',
+                        'jobs.expect': 'ما ينتظرك:',
+                        'jobs.description': 'بيئة عمل عائلية، مهام متنوعة في جميع أنحاء برلين وفرص تطوير حقيقية. معنا تتعلم كل شيء من الصفر - حديث وعملي ودائماً مع لمسة من الفكاهة.',
+                        'jobs.more_info': 'يمكن العثور على مزيد من المعلومات حول التدريب في غرفة الحرف اليدوية في برلين.',
+                        'jobs.contact': 'مهتم؟ فقط تواصل معنا: bewerbung@koese-sanitaer.de',
+                        'jobs.since': 'ندرب بنجاح منذ عام 1938! 🏆'
+                    }
+                };
+            }
+
+            init() {
+                this.handleLoading();
+                this.setupNavigation();
+                this.setupLanguageSelector();
+                this.setupJobsPopup();
+                this.setupAnimations();
+                this.setupForms();
+                this.setupScrollEffects();
+                this.translatePage();
+            }
+
+            // Language System
+            translatePage() {
+                const elements = document.querySelectorAll('[data-i18n]');
+                elements.forEach(element => {
+                    const key = element.getAttribute('data-i18n');
+                    const translation = this.translations[this.currentLang]?.[key];
+                    if (translation) {
+                        element.innerHTML = translation;
+                    }
+                });
+
+                // Update language selector
+                const flags = { de: '🇩🇪', en: '🇬🇧', tr: '🇹🇷', ru: '🇷🇺', ar: '🇸🇦' };
+                const langCurrent = document.getElementById('lang-current');
+                if (langCurrent) {
+                    langCurrent.querySelector('span:first-child').textContent = flags[this.currentLang];
+                    langCurrent.querySelector('span:nth-child(2)').textContent = this.translations[this.currentLang]?.[`lang.${this.currentLang}`] || 'Deutsch';
+                }
+
+                // Set document language and direction
+                document.documentElement.lang = this.currentLang;
+                document.documentElement.dir = this.currentLang === 'ar' ? 'rtl' : 'ltr';
+            }
+
+            setupLanguageSelector() {
+                const langCurrent = document.getElementById('lang-current');
+                const langDropdown = document.getElementById('lang-dropdown');
+                const langOptions = document.querySelectorAll('.lang-option');
+
+                langCurrent?.addEventListener('click', () => {
+                    langDropdown.classList.toggle('active');
+                });
+
+                langOptions.forEach(option => {
+                    option.addEventListener('click', () => {
+                        const lang = option.getAttribute('data-lang');
+                        this.changeLanguage(lang);
+                        langDropdown.classList.remove('active');
+                    });
+                });
+
+                // Close dropdown when clicking outside
+                document.addEventListener('click', (e) => {
+                    if (!e.target.closest('.language-selector')) {
+                        langDropdown.classList.remove('active');
+                    }
+                });
+            }
+
+            changeLanguage(lang) {
+                this.currentLang = lang;
+                // Language persists only during session (no localStorage in sandbox)
+                this.translatePage();
+            }
+
+            // Jobs Popup
+            setupJobsPopup() {
+                const jobsTrigger = document.getElementById('jobs-trigger');
+                const jobsFloatBtn = document.getElementById('jobs-float-btn');
+                const jobsOverlay = document.getElementById('jobs-popup-overlay');
+                const jobsCloseBtn = document.getElementById('jobs-close-btn');
+
+                const openPopup = (e) => {
+                    e.preventDefault();
+                    jobsOverlay.classList.add('active');
+                    document.body.style.overflow = 'hidden';
+                };
+
+                const closePopup = () => {
+                    jobsOverlay.classList.remove('active');
+                    document.body.style.overflow = '';
+                };
+
+                jobsTrigger?.addEventListener('click', openPopup);
+                jobsFloatBtn?.addEventListener('click', openPopup);
+                jobsCloseBtn?.addEventListener('click', closePopup);
+
+                jobsOverlay?.addEventListener('click', (e) => {
+                    if (e.target === jobsOverlay) {
+                        closePopup();
+                    }
+                });
+
+                // Close with Escape key
+                document.addEventListener('keydown', (e) => {
+                    if (e.key === 'Escape' && jobsOverlay.classList.contains('active')) {
+                        closePopup();
+                    }
+                });
+            }
+
+            // Loading Screen
+            handleLoading() {
+                window.addEventListener('load', () => {
+                    setTimeout(() => {
+                        const loading = document.getElementById('loading');
+                        loading?.classList.add('hidden');
+                        setTimeout(() => loading?.remove(), 500);
+                    }, 1000);
+                });
+            }
+
+            // Navigation
+            setupNavigation() {
+                const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+                const navMenu = document.getElementById('nav-menu');
+                const header = document.getElementById('header');
+
+                // Mobile menu toggle
+                mobileMenuBtn?.addEventListener('click', () => {
+                    navMenu.classList.toggle('active');
+                });
+
+                // Smooth scrolling
+                document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                    anchor.addEventListener('click', (e) => {
+                        if (anchor.getAttribute('href') === '#') return;
+                        e.preventDefault();
+                        const target = document.querySelector(anchor.getAttribute('href'));
+                        if (target) {
+                            target.scrollIntoView({
+                                behavior: 'smooth',
+                                block: 'start'
+                            });
+                            navMenu.classList.remove('active');
+                        }
+                    });
+                });
+
+                // Header scroll effect
+                window.addEventListener('scroll', () => {
+                    if (window.scrollY > 100) {
+                        header.style.background = 'rgba(255, 255, 255, 0.98)';
+                        header.style.borderBottomColor = 'rgba(0, 0, 0, 0.1)';
+                    } else {
+                        header.style.background = 'rgba(255, 255, 255, 0.95)';
+                        header.style.borderBottomColor = 'var(--border)';
+                    }
+                });
+            }
+
+            // Animations
+            setupAnimations() {
+                const observerOptions = {
+                    threshold: 0.1,
+                    rootMargin: '0px 0px -50px 0px'
+                };
+
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.style.animationDelay = `${entry.target.dataset.delay || 0}ms`;
+                            entry.target.classList.add('fade-in-up');
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, observerOptions);
+
+                // Observe all animation targets
+                document.querySelectorAll('.service-card, .fade-in-up').forEach((el, index) => {
+                    el.dataset.delay = index * 100;
+                    observer.observe(el);
+                });
+            }
+
+            // Forms
+            setupForms() {
+                const contactForm = document.getElementById('contact-form');
+                
+                contactForm?.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    
+                    // Show success message
+                    this.showNotification(
+                        this.translations[this.currentLang]?.['form.success'] || 
+                        'Vielen Dank! Ihre Nachricht wurde gesendet. Wir melden uns bald bei Ihnen!', 
+                        'success'
+                    );
+                    
+                    // Reset form
+                    contactForm.reset();
+                });
+            }
+
+            // Scroll Effects
+            setupScrollEffects() {
+                // Parallax effect for hero
+                window.addEventListener('scroll', () => {
+                    const scrolled = window.pageYOffset;
+                    const hero = document.querySelector('.hero');
+                    if (hero) {
+                        hero.style.transform = `translateY(${scrolled * 0.5}px)`;
+                    }
+                });
+
+                // Progress indicator
+                const progressBar = document.createElement('div');
+                progressBar.style.cssText = `
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 0%;
+                    height: 3px;
+                    background: linear-gradient(90deg, var(--primary), var(--accent));
+                    z-index: 9999;
+                    transition: width 0.1s ease;
+                `;
+                document.body.appendChild(progressBar);
+
+                window.addEventListener('scroll', () => {
+                    const scrollTop = window.pageYOffset;
+                    const docHeight = document.body.offsetHeight - window.innerHeight;
+                    const scrollPercent = (scrollTop / docHeight) * 100;
+                    progressBar.style.width = scrollPercent + '%';
+                });
+            }
+
+            // Notifications
+            showNotification(message, type = 'info') {
+                const notification = document.createElement('div');
+                notification.style.cssText = `
+                    position: fixed;
+                    top: 20px;
+                    right: 20px;
+                    background: ${type === 'success' ? 'var(--accent)' : 'var(--primary)'};
+                    color: white;
+                    padding: 1rem 1.5rem;
+                    border-radius: 8px;
+                    box-shadow: var(--shadow-lg);
+                    z-index: 10000;
+                    opacity: 0;
+                    transform: translateX(100%);
+                    transition: all 0.3s ease;
+                    max-width: 300px;
+                `;
+                notification.textContent = message;
+                document.body.appendChild(notification);
+
+                // Show notification
+                setTimeout(() => {
+                    notification.style.opacity = '1';
+                    notification.style.transform = 'translateX(0)';
+                }, 100);
+
+                // Hide notification
+                setTimeout(() => {
+                    notification.style.opacity = '0';
+                    notification.style.transform = 'translateX(100%)';
+                    setTimeout(() => notification.remove(), 300);
+                }, 5000);
+            }
+        }
+
+        // Initialize the application
+        document.addEventListener('DOMContentLoaded', () => {
+            new MinterKoese2025();
+        });
+
+        // Performance monitoring (optional)
+        if ('performance' in window) {
+            window.addEventListener('load', () => {
+                const perfData = performance.getEntriesByType('navigation')[0];
+                console.log(`🚀 Site loaded in ${Math.round(perfData.loadEventEnd - perfData.fetchStart)}ms`);
+            });
+        }
+    </script>
+</body>
+</html>
